@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="stype1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="hinhvuong.css">
+	<title>Thuật Toán Tìm Kiếm Nhị Phân</title>
+	<link href="3.png" rel="icon" type="image/x-icon">
+</head>
+<body bgcolor="black">
+	<div id="wrapper">
+		<header>
+		<div id="header">
+		<nav class="container">
+			<a href="" id="logo">
+				<img src="3.png">
+			</a>
+			<ul id="main-menu">
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="">Danh sách bài</a>
+					<ul class="sub-menu">
+						<li><a href="" target="_self">Làm quen</a>
+							<ul class="sub-menu">
+								<li><a href="" target="_self">Bài 1</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 1.1.html" target="_self">Bài 1.1</a></li>
+										<li><a href="Bài 2.1.html" target="_self">Bài 1.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 2</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 3.1.html" target="_self">Bài 2.1</a></li>
+										<li><a href="Bài 4.1.html" target="_self">Bài 2.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 3</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 5.1.html" target="_self">Bài 3.1</a></li>
+										<li><a href="Bài 6.1.html" target="_self">Bài 3.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 4</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 7.1.html" target="_self">Bài 4.1</a></li>
+										<li><a href="Bài 8.1.html" target="_self">Bài 4.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 5</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 9.1.html" target="_self">Bài 5.1</a></li>
+										<li><a href="Bài 10.1.html" target="_self">Bài 5.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 6</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 11.1.html" target="_self">Bài 6.1</a></li>
+										<li><a href="Bài 12.1.html" target="_self">Bài 6.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 7</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 13.1.html" target="_self">Bài 7.1</a></li>
+										<li><a href="Bài 14.1.html" target="_self">Bài 7.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 8</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 15.1.html" target="_self">Bài 8.1</a></li>
+										<li><a href="Bài 16.1.html" target="_self">Bài 8.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 9</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 17.1.html" target="_self">Bài 9.1</a></li>
+										<li><a href="Bài 18.1.html" target="_self">Bài 9.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 10</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 19.1.html" target="_self">Bài 10.1</a></li>
+										<li><a href="Bài 20.1.html" target="_self">Bài 10.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self"></a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Mảng 1 Chiều</a>
+							<ul class="sub-menu">
+								<li><a href="" target="_self">Bài 1</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 1.html" target="_self">Bài 1.1</a></li>
+										<li><a href="Bài 2.html" target="_self">Bài 1.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 2</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 3.html" target="_self">Bài 2.1</a></li>
+										<li><a href="Bài 4.html" target="_self">Bài 2.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 3</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 5.html" target="_self">Bài 3.1</a></li>
+										<li><a href="Bài 6.html" target="_self">Bài 3.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 4</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 7.html" target="_self">Bài 4.1</a></li>
+										<li><a href="Bài 8.html" target="_self">Bài 4.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 5</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 9.html" target="_self">Bài 5.1</a></li>
+										<li><a href="Bài 10.html" target="_self">Bài 5.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 6</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 11.html" target="_self">Bài 6.1</a></li>
+										<li><a href="Bài 12.html" target="_self">Bài 6.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 7</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 13.html" target="_self">Bài 7.1</a></li>
+										<li><a href="Bài 14.html" target="_self">Bài 7.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 8</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 15.html" target="_self">Bài 8.1</a></li>
+										<li><a href="Bài 16.html" target="_self">Bài 8.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 9</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 17.html" target="_self">Bài 9.1</a></li>
+										<li><a href="Bài 18.html" target="_self">Bài 9.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 10</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 19.html" target="_self">Bài 10.1</a></li>
+										<li><a href="Bài 20.html" target="_self">Bài 10.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self"></a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Mảng 2 chiều</a>
+							<ul class="sub-menu">
+								<li><a href="" target="_self">Bài 1</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 1.2.html" target="_self">Bài 1.1</a></li>
+										<li><a href="Bài 2.2.html" target="_self">Bài 1.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 2</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 3.2.html" target="_self">Bài 2.1</a></li>
+										<li><a href="Bài 4.2.html" target="_self">Bài 2.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 3</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 5.2.html" target="_self">Bài 3.1</a></li>
+										<li><a href="Bài 6.2.html" target="_self">Bài 3.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 4</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 7.2.html" target="_self">Bài 4.1</a></li>
+										<li><a href="Bài 8.2.html" target="_self">Bài 4.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 5</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 9.2.html" target="_self">Bài 5.1</a></li>
+										<li><a href="Bài 10.2.html" target="_self">Bài 5.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 6</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 11.2.html" target="_self">Bài 6.1</a></li>
+										<li><a href="Bài 12.2.html" target="_self">Bài 6.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 7</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 13.2.html" target="_self">Bài 7.1</a></li>
+										<li><a href="Bài 14.2.html" target="_self">Bài 7.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 8</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 15.2.html" target="_self">Bài 8.1</a></li>
+										<li><a href="Bài 16.2.html" target="_self">Bài 8.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 9</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 17.2.html" target="_self">Bài 9.1</a></li>
+										<li><a href="Bài 18.2.html" target="_self">Bài 9.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 10</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 19.2.html" target="_self">Bài 10.1</a></li>
+										<li><a href="Bài 20.2.html" target="_self">Bài 10.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self"></a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Set & Map</a>
+							<ul class="sub-menu">
+								<li><a href="" target="_self">Bài 1</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 1.3.html" target="_self">Bài 1.1</a></li>
+										<li><a href="Bài 2.3.html" target="_self">Bài 1.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 2</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 3.3.html" target="_self">Bài 2.1</a></li>
+										<li><a href="Bài 4.3.html" target="_self">Bài 2.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 3</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 5.3.html" target="_self">Bài 3.1</a></li>
+										<li><a href="Bài 6.3.html" target="_self">Bài 3.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 4</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 7.3.html" target="_self">Bài 4.1</a></li>
+										<li><a href="Bài 8.3.html" target="_self">Bài 4.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 5</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 9.3.html" target="_self">Bài 5.1</a></li>
+										<li><a href="Bài 10.3.html" target="_self">Bài 5.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 6</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 11.3.html" target="_self">Bài 6.1</a></li>
+										<li><a href="Bài 12.3.html" target="_self">Bài 6.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 7</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 13.3.html" target="_self">Bài 7.1</a></li>
+										<li><a href="Bài 14.3.html" target="_self">Bài 7.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 8</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 15.3.html" target="_self">Bài 8.1</a></li>
+										<li><a href="Bài 16.3.html" target="_self">Bài 8.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 9</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 17.3.html" target="_self">Bài 9.1</a></li>
+										<li><a href="Bài 18.3.html" target="_self">Bài 9.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self">Bài 10</a>
+									<ul class="sub-menu">
+										<li><a href="Bài 19.3.html" target="_self">Bài 10.1</a></li>
+										<li><a href="Bài 20.3.html" target="_self">Bài 10.2</a></li>
+									</ul>
+								</li>
+								<li><a href="" target="_self"></a></li>
+							</ul>
+						</li>
+						<li><a href="" target=""></a></li>
+					</ul>
+					</li>
+				<li><a href="">Bài học 1</a>
+					<ul class="sub-menu">
+						<li><a href="" target="_self">Kiểu dữ liệu|Toán tử|Nhập xuất</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.1.html" target="_self">
+								Hello World!</a></li>
+								<li><a href="Bài học 2.1.html" target="_self">
+								Kiểu dữ liệu</a></li>
+								<li><a href="Bài học 3.1.html" target="_self">
+								Biến và từ khóa</a></li>
+								<li><a href="Bài học 4.1.html" target="_self">
+								Chú thích</a></li>
+								<li><a href="Bài học 5.1.html" target="_self">
+								cin và cout</a></li>
+								<li><a href="Bài học 6.1.html" target="_self">
+								Kiểu pair</a></li>
+								<li><a href="Bài học 7.1.html" target="_self">
+								Toán tử</a></li>
+								<li><a href="Bài học 8.1.html" target="_self">
+								Thư viện Math.h và Algorithm</a></li>
+								<li><a href="Bài học 9.1.html" target="_self">
+								Define,Typedef và Using</a></li>
+								<li><a href="Bài học 10.1.html" target="_self">
+								Kiểu dữ liệu suy luận auto</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Cấu trúc rẽ nhánh</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.2.html" target="_self">
+								If Else</a></li>
+								<li><a href="Bài học 2.2.html" target="_self">
+								If và Else if</a></li>
+								<li><a href="Bài học 3.2.html" target="_self">
+								Switch Case</a></li>
+								<li><a href="Bài học 4.2.html" target="_self">
+								Bảng Mã ASCII và Thư viện Ctype</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Vòng lặp</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.3.html" target="_self">
+								Vòng lặp For</a></li>
+								<li><a href="Bài học 2.3.html" target="_self">
+								Vòng lặp While</a></li>
+								<li><a href="Bài học 3.3.html" target="_self">
+								Vòng lặp Do-While</a></li>
+								<li><a href="Bài học 4.3.html" target="_self">
+								Câu lệnh Break và Continue</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Hàm và Đệ Quy</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.4.html" target="_self">
+								Hàm</a></li>
+								<li><a href="Bài học 2.4.html" target="_self">
+								Khai báo Nguyên mẫu hàm</a></li>
+								<li><a href="Bài học 3.4.html" target="_self">
+								Tham chiếu và tham trị</a></li>
+								<li><a href="Bài học 4.4.html" target="_self">
+								Đổi số mặc định của hàm</a></li>
+								<li><a href="Bài học 5.4.html" target="_self">
+								Lý thuyết số và toán học</a></li>
+								<li><a href="Bài học 6.4.html" target="_self">
+								Hàm đệ quy</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">con trỏ</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.5.html" target="_self">
+								Lý thuyết con trỏ</a></li>
+								<li><a href="Bài học 2.5.html" target="_self">
+								Con trỏ cấp 2</a></li>
+								<li><a href="Bài học 3.5.html" target="_self">
+								Con trỏ và mảng 1 chiều</a></li>
+								<li><a href="Bài học 4.5.html" target="_self">
+								Cấp phát mảng động</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Mảng 1 chiều</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.6.html" target="_self">
+								Mảng 1 chiều</a></li>
+								<li><a href="Bài học 2.6.html" target="_self">
+								Chèn và xóa phần tử</a></li>
+								<li><a href="Bài học 3.6.html" target="_self">
+								mảng đánh dấu</a></li>
+								<li><a href="Bài học 4.6.html" target="_self">
+								range-based for loop</a></li>
+							</ul>
+						</li>						
+						<li><a href="" target="_self">Mảng 2 chiều</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.7.html" target="_self">
+								Lý thuyết mảng 2 chiều</a></li>
+								<li><a href="Bài học 2.7.html" target="_self">
+								Ma trận và mảng 2 chiều</a></li>
+								<li><a href="Bài học 3.7.html" target="_self">
+								Cộng,trừ,nhân 2 ma trận</a></li>
+								<li><a href="Bài học 4.7.html" target="_self">
+								Ma trận xoắn ốc</a></li>
+							</ul>
+						</li>
+						<li><a></a></li>
+					</ul>
+				</li>
+				<li><a href="">Bài học 2</a>
+					<ul class="sub-menu">
+						<li><a href="" target="_self">String|Xâu ký tự</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.8.html" target="_self">
+								String</a></li>
+								<li><a href="Bài học 2.8.html" target="_self">
+								Xử lý trôi lệnh khi nhập chuỗi ký tự</a></li>
+								<li><a href="Bài học 3.8.html" target="_self">Các hàm string xử lý xâu</a></li>
+								<li><a href="Bài học 4.8.html" target="_self">Chuyển đổi giữa số và string</a></li>
+								<li><a href="Bài học 5.8.html" target="_self">So sánh xâu ký tự theo thứ tự từ điển</a></li>
+								<li><a href="Bài học 6.8.html" target="_self">Chuyển đổi xâu ký tự in hoa,in thường</a></li>
+								<li><a href="Bài học 7.8.html" target="_self">Stringstream và ứng dụng</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Sắp xếp|Tìm kiếm</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.9.html" target="_self">
+								Thuật toán tìm kiếm nhị phân</a></li>
+								<li><a href="Bài học 2.9.html" target="_self">Hàm sort</a></li>
+								<li><a href="Bài học 3.9.html" target="_self">Xây Dựng Comparison Function Cho Hàm Sort</a></li>
+								<li><a href="Bài học 4.9.html" target="_self"> Hàm stable_sort()</a></li>
+								<li><a href="Bài học 5.9.html" target="_self">Thuật Toán Tìm Kiếm Tuyến Tính</a></li>
+								<li><a href="Bài học 6.9.html" target="_self">Hàm binary_search, lower_bound, upper_bound</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Vector và Iterator</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.10.html" target="_self">Vector</a></li>
+								<li><a href="Bài học 2.10.html" target="_self">Iterator</a></li>
+								<li><a href="Bài học 3.10.html" target="_self">Hàm thông dụng của vector</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Set và Multiset và Unordered set</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.11.html" target="_self">Set</a></li>
+								<li><a href="Bài học 2.11.html" target="_self">Hàm thông dụng của set</a></li>
+								<li><a href="Bài học 3.11.html" target="_self">Multiset</a></li>
+								<li><a href="Bài học 4.11.html" target="_self">Unordered_set</a></li>
+							</ul>
+						</li>
+						<li><a href="" target="_self">Map và Multimap và Unordered_map</a>
+							<ul class="sub-menu">
+								<li><a href="Bài học 1.12.html" target="_self">Map</a></li>
+								<li><a href="Bài học 2.12.html" target="_self">Hàm thông dụng của map</a></li>
+								<li><a href="Bài học 3.12.html" target="_self">Multimap</a></li>
+								<li><a href="Bài học 4.12.html" target="_self">Unordered_map</a></li>
+							</ul>
+						</li>
+						<li><a></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		</nav>
+	</header>
+	</div>
+	<div id="banner"></div>
+	</div>
+<div id="content" class="container">
+	<article class="article-detail mb-30"><h1 class="article-title-detail" style="color:#001A65;">Thuật Toán Tìm Kiếm Nhị Phân</h1><div><div class="article-description"><p>Thuật toán tìm kiếm nhị phân - Binary search là một thuật toán tìm kiếm cực kỳ hiệu quả và quan trọng trong ngành CNTT. Bạn cần nắm vững thuật toán tìm kiếm quan trọng này.</p>
+<p><span style="color: rgb(53, 152, 219); font-size: 14pt;"><strong>NỘI DUNG :&nbsp;</strong></span></p>
+<ul>
+<li><span style="color: rgb(53, 152, 219);"><strong>Tìm Kiếm Nhị Phân</strong></span></li>
+<li><span style="color: #3598db;"><strong>Vị Trí Đầu Tiên Của Phần Tử X Trong Mảng Tăng Dần</strong></span></li>
+<li><span style="color: #3598db;"><strong>Vị Trí Cuối Cùng Của Phần Tử X Trong Mảng Tăng Dần</strong></span></li>
+<li><span style="color: #3598db;"><strong>Vị Trí Đầu Tiên Của Phần Tử Lớn Hơn Hoặc Bằng X Trong Mảng Tăng Dần</strong></span></li>
+</ul>
+<hr></div><div class="article-content"><p><span style="font-size: 14pt; color: rgb(53, 152, 219);" data-mce-style="font-size: 14pt; color: rgb(53, 152, 219);"><strong>1. Tìm Kiếm Nhị Phân</strong></span></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Tìm kiếm nhị phân </strong></span>- Binary search được sử dụng trên dãy số đã được sắp xếp tăng dần hoặc giảm dần.</p><p>Khác với tìm kiếm tuyến tính không cần điều kiện gì về dãy số tìm kiếm thì với tìm kiếm nhị phân ta phải có một dãy số đã có thứ tự hoặc phải sắp xếp dãy số trước khi áp dụng thuật toán này.</p><p>Giả sử bạn cần tìm kiếm phần tử X trong mảng A[] có N phần tử đã sắp xếp tăng dần. Ban đầu đoạn tìm kiếm sẽ là toàn bộ mảng, chỉ số đầu tiên của đoạn tìm kiếm là 0 và chỉ số cuối cùng là N - 1.</p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Ý tưởng</strong></span> của thuật toán đó là ở mỗi lần tìm kiếm trên đoạn [L, R] thì bạn sẽ tìm ra phần tử đứng giữa và so sánh với phần tử X, vì mảng đã sắp xếp tăng dần nên khi so sánh X với phần tử đứng giữa bạn có thể loại bỏ đi 1 nửa khoảng tìm kiếm, cứ như vậy thì đoạn bạn cần tìm kiếm sẽ giảm đi 1 nửa sau mỗi lần tìm kiếm.&nbsp;</p><p>Ví dụ mảng có 1 tỷ phần tử thì bạn chỉ cần tìm kiếm 31 lần.</p><p>Để tìm chỉ số đứng giữa của đoạn [L, R] bạn lấy (L + R) / 2 hoặc L + (R - L) / 2</p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Độ phức tạp </strong></span>: O(logN)</p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Thuật toán :&nbsp;</strong></span></p><ol><li>Chia đôi đoạn tìm kiếm thành 2 nửa bằng cách tìm chỉ số đứng giữa của đoạn cần tìm kiếm, M = (L + R) / 2</li><li>So sánh phần tử ở giữa đoạn là A[M] với phần tử cần tìm kiếm sẽ xảy ra 3 trường hợp&nbsp;</li><li>Nếu phần tử cần tìm kiếm bằng phần tử ở giữa thì kết luận tìm thấy</li><li>Nếu phần tử cần tìm kiếm nhỏ hơn phần tử ở giữa thì loại bỏ nửa bên phải trong lần tìm kiếm tiếp theo</li><li>Nếu phần tử cần tìm kiếm lớn hơn phần tử ở giữa thì loại bỏ nửa bên trái trong lần tìm kiếm tiếp theo</li><li>Quá trình lặp đi lặp lại từ bước 1 tới bước 5 cho tới khi phần tử được tìm thấy hoặc không còn khoảng tìm kiếm</li></ol><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Trường hợp 1</strong></span> : Khi tìm ra phần tử đứng giữa bằng giá trị mà bạn tìm kiếm, thuật toán sẽ dừng vì đã tìm thấy</p><p><img src="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_1_.png"><a title="image" href="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_1_.png" data-mce-href="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_1_.png" style="display: none;">binary search 1</a></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Trường hợp 2</strong></span> : Khi tìm ra phần tử đứng giữa nhỏ hơn giá trị tìm kiếm, ta có thể khẳng đỉnh giá trị cần tìm kiếm nếu có sẽ nằm ở nửa bên phải. Khi đó bạn cập nhập L = M + 1</p><p><img src="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_2.png"><a title="image" href="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_2.png" data-mce-href="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_2.png" style="display: none;">binary search 2</a></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Trường hợp 3</strong></span> : Khi tìm ra phần tử đứng giữa lớn hơn giá trị tìm kiếm, ta có thể khẳng đỉnh giá trị cần tìm kiếm nếu có sẽ nằm ở nửa bên trái. Khi đó bạn cập nhập R = M - 1</p><p><img src="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_3.png"><a title="image" href="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_3.png" data-mce-href="https://cdn-blog.28tech.com.vn/media/c%20tutorial/con%20tro/con%20tr%E1%BB%8F%20b%C3%A0i%201/tknp_3.png" style="display: none;">binary search 3</a></p><p><br></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Mã nguồn :&nbsp;</strong></span></p><pre class="language-cpp HV" contenteditable="false"><pre class="language-cpp" contenteditable="false"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">bool</span> <span class="token function">binary_search</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">//Khởi tạo left, right</span>
+    <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>l <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//Tính chỉ số của phần tử ở giữa</span>
+        <span class="token keyword">int</span> m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// tìm thấy</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//tìm kiếm ở bên phải</span>
+            l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">//tìm kiếm ở bên trái</span>
+            r <span class="token operator">=</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token comment">// l &gt; r</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">12</span><span class="token punctuation">,</span> x <span class="token operator">=</span> <span class="token number">24</span><span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">12</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">binary_search</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> n<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"FOUND\n"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"NOT FOUND\n"</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token function">binary_search</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> n<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"FOUND\n"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span> cout <span class="token operator">&lt;&lt;</span> <span class="token string">"NOT FOUND\n"</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></pre></pre><p><span style="color: rgb(230, 126, 35);" data-mce-style="color: rgb(230, 126, 35);"><strong>Output :&nbsp;</strong></span></p><pre class="language-c HV" contenteditable="false"><pre class="language-c" contenteditable="false">FOUND
+NOT FOUND</pre></pre><p><br></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Ví dụ 1</strong></span>. Tìm phần tử X = 3 trong mảng A[] = {1, 1, 3, 4, 5, 8, 9, 12, 21, 32}</p><p>Ban đầu : l = 0, r = 9</p><ol><li>Vòng lặp 1, l = 0, r = 9 , m = (l + r) / 2 = 4, A[m] = 5 &gt; X =&gt; Cập nhật r = m - 1 = 3</li><li>Vòng lặp 2, l = 0, r = 3, m = (l + r) / 2 = 1, A[m] = 1 &lt; X =&gt; Cập nhật l = m + 1 = 2</li><li>Vòng lặp 3, l = 2, r = 3, m = (l + r) / 2 = 2, A[m] = 3 = X =&gt; Tìm thấy X và kết thúc chương trình&nbsp;</li></ol><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Ví dụ 2</strong></span>. Tìm phần tử X = 2 trong mảng A[] = {1, 1, 3, 4, 5, 8, 9, 12, 21, 32}</p><p>Ban đầu : l = 0, r = 9</p><ol><li>Vòng lặp 1, l = 0, r = 9, m = (l + r) / 2 = 4, A[m] = 4 &gt; X =&gt; Cập nhật r = m - 1 = 3</li><li>Vòng lặp 2, l = 0, r = 3, m = (l + r) / 2 = 1, A[m] = 1 &lt; X =&gt; Cập nhật l = m + 1 = 2</li><li>Vòng lặp 3, l = 2, r = 3, m = (l + r) / 2 = 2, A[m] = 3 &gt; X =&gt; Cập nhật r = m - 1 - 1</li><li>Vòng lặp 4, l = 2, r = 1, l &gt; r nên vòng lặp kết thúc và không tìm thấy X&nbsp;</li></ol><hr><p><br></p><p><span style="font-size: 14pt; color: rgb(53, 152, 219);" data-mce-style="font-size: 14pt; color: rgb(53, 152, 219);"><strong>2. Tìm Kiếm Nhị Phân Biến Đổi</strong></span></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Bài toán 1</strong></span>. Tìm vị trí đầu tiên của phần tử X trong mảng đã sắp tăng dần</p><p>Tương tự như thuật toán tìm kiếm nhị phân nhưng khi tìm thấy phần tử X trong mảng thì ta chỉ lưu lại kết quả và cố gắng tìm kiếm thêm ở nửa bên trái.</p><pre class="language-cpp HV" contenteditable="false"><pre class="language-cpp" contenteditable="false"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">firstPos</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> pos <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// cập nhật kết quả</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>l <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//Tính chỉ số của phần tử ở giữa</span>
+        <span class="token keyword">int</span> m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            pos <span class="token operator">=</span> m<span class="token punctuation">;</span> <span class="token comment">// lưu lại</span>
+            <span class="token comment">//Tìm thêm bên trái</span>
+            r <span class="token operator">=</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//tìm kiếm ở bên phải</span>
+            l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">//tìm kiếm ở bên trái</span>
+            r <span class="token operator">=</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pos<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token function">firstPos</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> n<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>res <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"3 khong xuat hien trong mang\n"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Vi tri dau tien cua 3 trong mang : "</span> <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre></pre><p><span style="color: rgb(230, 126, 35);" data-mce-style="color: rgb(230, 126, 35);">Output :&nbsp;</span></p><pre class="language-c HV" contenteditable="false"><pre class="language-c" contenteditable="false">Vi tri dau tien cua <span class="token number">3</span> trong mang <span class="token operator">:</span> <span class="token number">4</span></pre></pre><p><br></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Bài toán 2 </strong></span>: Tìm vị trí cuối cùng của phần tử X trong mảng đã sắp tăng dần</p><p>Tương tự như thuật toán tìm kiếm nhị phân nhưng khi tìm thấy phần tử X trong mảng thì ta chỉ lưu lại kết quả và cố gắng tìm kiếm thêm ở nửa bên phải.</p><pre class="language-cpp HV" contenteditable="false"><pre class="language-cpp" contenteditable="false"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">lastPos</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> pos <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// cập nhật kết quả</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>l <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//Tính chỉ số của phần tử ở giữa</span>
+        <span class="token keyword">int</span> m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">==</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            pos <span class="token operator">=</span> m<span class="token punctuation">;</span> <span class="token comment">// lưu lại</span>
+            <span class="token comment">//Tìm thêm bên phải</span>
+            l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token comment">//tìm kiếm ở bên phải</span>
+            l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">//tìm kiếm ở bên trái</span>
+            r <span class="token operator">=</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pos<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> x <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token function">lastPos</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> n<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>res <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"3 khong xuat hien trong mang\n"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Vi tri xuat hien cuoi cung cua 3 trong mang : "</span> <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre></pre><p><span style="color: rgb(230, 126, 35);" data-mce-style="color: rgb(230, 126, 35);">Output :&nbsp;</span></p><pre class="language-cpp HV" contenteditable="false"><pre class="language-cpp" contenteditable="false">Vi tri xuat hien cuoi cung cua <span class="token number">3</span> trong mang <span class="token operator">:</span> <span class="token number">6</span></pre></pre><p><br></p><p><span style="color: rgb(53, 152, 219);" data-mce-style="color: rgb(53, 152, 219);"><strong>Bài toán 3</strong></span> : Tìm vị trí đầu tiên của phần tử lớn hơn hoặc bằng X trong mảng đã sắp tăng dần</p><p>Tương tự như thuật toán tìm kiếm nhị phân nhưng khi tìm thấy phần tử ở giữa lớn hơn hoặc bằng phần tử X thì ta chỉ lưu lại kết quả và cố gắng tìm kiếm thêm ở nửa bên trái.</p><pre class="language-cpp HV" contenteditable="false"><pre class="language-cpp" contenteditable="false"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">firstPos</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> l <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> r <span class="token operator">=</span> n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> pos <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> <span class="token comment">// cập nhật kết quả</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>l <span class="token operator">&lt;=</span> r<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment">//Tính chỉ số của phần tử ở giữa</span>
+        <span class="token keyword">int</span> m <span class="token operator">=</span> <span class="token punctuation">(</span>l <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&gt;=</span> x<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            pos <span class="token operator">=</span> m<span class="token punctuation">;</span> <span class="token comment">// lưu lại</span>
+            <span class="token comment">//Tìm thêm bên trái</span>
+            r <span class="token operator">=</span> m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">else</span><span class="token punctuation">{</span>
+            <span class="token comment">//tìm kiếm ở bên phải</span>
+            l <span class="token operator">=</span> m <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pos<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> n <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">,</span> x <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> a<span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token function">firstPos</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> n<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>res <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Khong ton tai so &gt;= 4 trong mang\n"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">else</span><span class="token punctuation">{</span>
+        cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Vi tri cua phan tu dau tien &gt;= 4 trong mang la : "</span> <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> <span class="token string">", gia tri = "</span> <span class="token operator">&lt;&lt;</span> a<span class="token punctuation">[</span>res<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</pre></pre><p><span style="color: rgb(230, 126, 35);" data-mce-style="color: rgb(230, 126, 35);">Output :&nbsp;</span></p><pre class="language-c HV" contenteditable="false"><pre class="language-c" contenteditable="false">Vi tri cua phan tu dau tien <span class="token operator">&gt;=</span> <span class="token number">4</span> trong mang la <span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span> gia tri <span class="token operator">=</span> <span class="token number">5</span></pre></pre></div></div></article>
+		</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.sub-menu').parent('li').addClass('has-child');
+		});
+	</script>
+</body>
+</html>
